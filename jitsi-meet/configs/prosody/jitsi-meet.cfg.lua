@@ -104,3 +104,7 @@ Component "speakerstats.{{ .Env.XMPP_DOMAIN }}" "speakerstats_component"
     muc_component = "{{ .Env.XMPP_MUC_DOMAIN }}"
 Component "conferenceduration.{{ .Env.XMPP_DOMAIN }}" "conference_duration_component"
     muc_component = "{{ .Env.XMPP_MUC_DOMAIN }}"
+
+
+cross_domain_websocket = { "{{ .Env.PROSODY_HOST }}" }
+cross_domain_bosh = { "{{ .Env.PROSODY_HOST }}" }
